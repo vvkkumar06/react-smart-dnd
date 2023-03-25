@@ -1,4 +1,4 @@
-# simple-dnd
+# react-smart-dnd
 
 > Turn any element into draggable, transfer data easily to dropzone
 
@@ -6,7 +6,7 @@
 ## Install
 
 ```bash
-npm install --save simple-dnd
+npm install --save react-smart-dnd
 ```
 
 ## [Demo](https://gilded-dieffenbachia-67ae76.netlify.app)
@@ -16,9 +16,9 @@ npm install --save simple-dnd
 
 ```tsx
 //Card.tsx
-import { useSimpleDnD } from 'simple-dnd';
+import { useSmartDnd } from 'react-smart-dnd';
 const Card = ({ data }: any) => {
-  const { Draggable } = useSimpleDnD({});
+  const { Draggable } = useSmartDnd({});
 
   return (
     <Draggable id={data.id} data={{task: JSON.stringify(data)}}>
@@ -33,12 +33,12 @@ const Card = ({ data }: any) => {
 ```tsx
 
 //DropArea.tsx
-import { useSimpleDnD } from 'simple-dnd';
+import { useSmartDnd } from 'react-smart-dnd';
 const DropArea = ({onDataChange}: any) => {
   const [tasks, setTasks] = useState([] as any)
 
 
-  const { Dropzone } = useSimpleDnD({
+  const { Dropzone } = useSmartDnd({
     onDrop: (data: any, dropzoneId: any) => {
       const task = JSON.parse(data.task);
       console.log(task, dropzoneId);
@@ -62,7 +62,7 @@ const DropArea = ({onDataChange}: any) => {
             <section className="card" key={task.id}>
               {task.name}
             </section>
-          )) : "Simple Drop"
+          )) : "Smart Drop"
         }
       </section>
     </Dropzone>

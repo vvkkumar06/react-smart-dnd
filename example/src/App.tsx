@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { useSimpleDnD } from 'simple-dnd';
+import { useSmartDnd } from 'react-smart-dnd';
 const tasksData = [{
   id: 1,
   name: 'task-1'
@@ -41,7 +41,7 @@ const App = () => {
 
 
 const Card = ({ data }: any) => {
-  const { Draggable } = useSimpleDnD({});
+  const { Draggable } = useSmartDnd({});
 
   return (
     <Draggable id={data.id} data={{task: JSON.stringify(data)}}>
@@ -58,7 +58,7 @@ const DropArea = ({onDataChange}: any) => {
   const [tasks, setTasks] = useState([] as any)
 
 
-  const { Dropzone } = useSimpleDnD({
+  const { Dropzone } = useSmartDnd({
     onDrop: (data: any, dropzoneId: any) => {
       const task = JSON.parse(data.task);
       console.log(task, dropzoneId);
@@ -82,7 +82,7 @@ const DropArea = ({onDataChange}: any) => {
             <section className="card" key={task.id}>
               {task.name}
             </section>
-          )) : "Simple Drop"
+          )) : "Smart Drop"
         }
       </section>
     </Dropzone>

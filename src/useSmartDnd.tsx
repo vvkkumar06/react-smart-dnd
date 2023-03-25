@@ -56,11 +56,11 @@ const Dropzone = (props: DropzoneProps) => {
     )
 }
 
-type simpleDndProps = {
+type smartDndProps = {
     onDrop?: (data: any, dropzoneId?: string | number) => void // receive data in key value
     dataNames?: Array<string> //small cases 
 }
-export const useSimpleDnD = (props: simpleDndProps) => {
+export const useSmartDnd = (props: smartDndProps) => {
 
     return {
         Draggable,

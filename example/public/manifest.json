@@ -1,6 +1,6 @@
 {
-  "short_name": "simple-dnd",
-  "name": "simple-dnd",
+  "short_name": "react-smart-dnd",
+  "name": "react-smart-dnd",
   "icons": [
     {
       "src": "favicon.ico",

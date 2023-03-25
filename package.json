@@ -1,13 +1,13 @@
 {
-  "name": "simple-dnd",
+  "name": "react-smart-dnd",
   "version": "1.0.0",
   "description": "Turn any element into draggable, transfer data easily to dropzone",
   "author": "vvkkumar06",
   "license": "MIT",
-  "repository": "vvkkumar06/simple-dnd",
-  "main": "dist/useSimpleDnD.js",
-  "module": "dist/simple-dnd.js",
-  "source": "src/useSimpleDnD.tsx",
+  "repository": "vvkkumar06/react-smart-dnd",
+  "main": "dist/useSmartDnd.js",
+  "module": "dist/react-smart-dnd.js",
+  "source": "src/useSmartDnd.tsx",
   "engines": {
     "node": ">=10"
   },
