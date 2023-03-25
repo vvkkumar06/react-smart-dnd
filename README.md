@@ -10,6 +10,9 @@
 npm install --save simple-dnd
 ```
 
+## Demo
+[a link](https://gilded-dieffenbachia-67ae76.netlify.app)
+
 ## Usage
 
 
