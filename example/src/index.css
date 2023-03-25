@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 5p 5px rgba(0,0,0,0.4);
+  background-color: #829;
+  padding-top: 15px;
+  text-align: center;
+  margin: 5px;
+}
+
+.drop-area {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  border: 1px solid dotted;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
