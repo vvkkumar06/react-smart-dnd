@@ -2,7 +2,6 @@
 
 > Turn any element into draggable, transfer data easily to dropzone
 
-[![NPM](https://img.shields.io/npm/v/simple-dnd.svg)](https://www.npmjs.com/package/simple-dnd) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
