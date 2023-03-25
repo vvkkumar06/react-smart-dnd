@@ -5,9 +5,9 @@
   "author": "vvkkumar06",
   "license": "MIT",
   "repository": "vvkkumar06/simple-dnd",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "source": "src/index.tsx",
+  "main": "dist/useSimpleDnD.js",
+  "module": "dist/simple-dnd.js",
+  "source": "src/useSimpleDnD.tsx",
   "engines": {
     "node": ">=10"
   },
